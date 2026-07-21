@@ -1,0 +1,5 @@
+CREATE TABLE Accounts (
+    AccountID INT PRIMARY KEY,
+    AccountHolder VARCHAR(50),
+    Balance DECIMAL(10,2)
+);

@@ -1,0 +1,8 @@
+USE OnlineRetailDB;
+GO
+
+INSERT INTO Orders
+VALUES
+(1,'Rahul','Laptop',55000),
+(2,'Sneha','Mobile',25000),
+(3,'Amit','Keyboard',1500);

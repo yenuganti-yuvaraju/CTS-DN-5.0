@@ -1,0 +1,11 @@
+SELECT
+    Category,
+    Region,
+    SUM(Amount) AS TotalSales
+FROM Sales
+GROUP BY GROUPING SETS
+(
+    (Category),
+    (Region),
+    (Category, Region)
+);

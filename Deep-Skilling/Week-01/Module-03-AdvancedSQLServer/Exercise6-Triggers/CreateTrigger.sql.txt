@@ -1,0 +1,13 @@
+USE OnlineRetailDB;
+GO
+
+CREATE TRIGGER trg_AfterInsertOrder
+ON Orders
+AFTER INSERT
+AS
+BEGIN
+    INSERT INTO OrderLog(OrderID, Message)
+    SELECT OrderID, 'New Order Inserted'
+    FROM inserted;
+END;
+GO

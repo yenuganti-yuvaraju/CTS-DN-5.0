@@ -1,0 +1,11 @@
+USE OnlineRetailDB;
+GO
+
+CREATE VIEW HighValueCustomers AS
+SELECT
+    CustomerID,
+    CustomerName,
+    City,
+    TotalPurchase
+FROM Customers
+WHERE TotalPurchase > 20000;

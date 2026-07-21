@@ -1,0 +1,10 @@
+USE OnlineRetailDB;
+GO
+
+INSERT INTO Products
+VALUES
+(1,'Laptop','Electronics',55000),
+(2,'Mobile','Electronics',25000),
+(3,'Headphones','Accessories',2000),
+(4,'Keyboard','Accessories',1500),
+(5,'Monitor','Electronics',12000);

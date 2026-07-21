@@ -1,0 +1,10 @@
+USE OnlineRetailDB;
+GO
+
+INSERT INTO EmployeeCursor
+VALUES
+(1,'Rahul',55000),
+(2,'Sneha',42000),
+(3,'Amit',60000),
+(4,'Priya',50000),
+(5,'Kiran',45000);

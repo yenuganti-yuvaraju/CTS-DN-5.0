@@ -1,0 +1,6 @@
+INSERT INTO Accounts VALUES
+(1,'Ravi',10000),
+(2,'Priya',15000),
+(3,'Kiran',20000);
+
+SELECT * FROM Accounts;

@@ -1,0 +1,17 @@
+USE OnlineRetailDB;
+GO
+
+CREATE TABLE Orders
+(
+    OrderID INT PRIMARY KEY,
+    CustomerName VARCHAR(50),
+    ProductName VARCHAR(50),
+    Amount DECIMAL(10,2)
+);
+
+CREATE TABLE OrderLog
+(
+    LogID INT IDENTITY(1,1) PRIMARY KEY,
+    OrderID INT,
+    Message VARCHAR(100)
+);

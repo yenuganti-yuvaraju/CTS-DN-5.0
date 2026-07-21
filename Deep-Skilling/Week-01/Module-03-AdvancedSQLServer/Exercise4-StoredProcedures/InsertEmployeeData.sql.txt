@@ -1,0 +1,10 @@
+USE OnlineRetailDB;
+GO
+
+INSERT INTO Employees
+VALUES
+(1,'Rahul','IT',55000),
+(2,'Sneha','HR',42000),
+(3,'Amit','Finance',60000),
+(4,'Priya','IT',50000),
+(5,'Kiran','Sales',45000);

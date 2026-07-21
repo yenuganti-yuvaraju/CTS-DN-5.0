@@ -1,0 +1,33 @@
+.App{
+  text-align:center;
+  margin-top:40px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+table{
+  margin:auto;
+  border-collapse:collapse;
+}
+
+th{
+  background:#1976d2;
+  color:white;
+}
+
+button{
+  padding:10px 25px;
+  background:#1976d2;
+  color:white;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+  font-size:16px;
+}
+
+button:hover{
+  background:#0d47a1;
+}
+
+h1{
+  color:#1565c0;
+}

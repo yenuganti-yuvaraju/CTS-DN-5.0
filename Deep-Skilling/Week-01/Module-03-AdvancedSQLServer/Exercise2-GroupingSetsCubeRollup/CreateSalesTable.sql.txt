@@ -1,0 +1,8 @@
+USE OnlineRetailDB;
+
+CREATE TABLE Sales(
+    SaleID INT PRIMARY KEY,
+    Category VARCHAR(50),
+    Region VARCHAR(50),
+    Amount DECIMAL(10,2)
+);

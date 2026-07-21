@@ -1,0 +1,24 @@
+BEGIN TRY
+    BEGIN TRANSACTION;
+
+    UPDATE Accounts
+    SET Balance = Balance - 2000
+    WHERE AccountID = 1;
+
+    UPDATE Accounts
+    SET Balance = Balance + 2000
+    WHERE AccountID = 2;
+
+    COMMIT TRANSACTION;
+
+    PRINT 'Transaction Successful';
+END TRY
+
+BEGIN CATCH
+    ROLLBACK TRANSACTION;
+
+    PRINT 'Transaction Failed';
+    PRINT ERROR_MESSAGE();
+END CATCH;
+
+SELECT * FROM Accounts;

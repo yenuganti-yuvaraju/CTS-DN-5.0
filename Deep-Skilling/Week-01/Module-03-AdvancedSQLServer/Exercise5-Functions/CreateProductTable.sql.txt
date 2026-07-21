@@ -1,0 +1,8 @@
+USE OnlineRetailDB;
+GO
+
+CREATE TABLE Products_Function (
+    ProductID INT PRIMARY KEY,
+    ProductName VARCHAR(50),
+    Price DECIMAL(10,2)
+);

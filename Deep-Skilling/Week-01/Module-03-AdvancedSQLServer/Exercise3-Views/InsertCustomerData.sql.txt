@@ -1,0 +1,10 @@
+USE OnlineRetailDB;
+GO
+
+INSERT INTO Customers
+VALUES
+(1,'Rahul','Hyderabad',25000),
+(2,'Priya','Chennai',18000),
+(3,'Arjun','Bangalore',32000),
+(4,'Sneha','Hyderabad',15000),
+(5,'Kiran','Delhi',28000);

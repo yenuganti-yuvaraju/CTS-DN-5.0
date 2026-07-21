@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="CalcLibrary/CalcLibrary.csproj" Id="4693fdb0-dda3-4d45-acf8-7cbe517c5f50" />
+  <Project Path="CalculatorTests/CalculatorTests.csproj" />
+</Solution>

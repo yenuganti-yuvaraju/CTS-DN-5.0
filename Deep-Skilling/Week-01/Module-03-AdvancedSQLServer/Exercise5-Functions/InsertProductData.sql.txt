@@ -1,0 +1,10 @@
+USE OnlineRetailDB;
+GO
+
+INSERT INTO Products_Function
+VALUES
+(1,'Laptop',55000),
+(2,'Mobile',25000),
+(3,'Keyboard',1500),
+(4,'Monitor',12000),
+(5,'Mouse',800);

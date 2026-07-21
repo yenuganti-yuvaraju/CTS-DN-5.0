@@ -1,0 +1,25 @@
+USE OnlineRetailDB;
+GO
+
+DECLARE @EmpName VARCHAR(50);
+DECLARE @Salary DECIMAL(10,2);
+
+DECLARE EmployeeCursor1 CURSOR FOR
+SELECT EmployeeName, Salary
+FROM EmployeeCursor;
+
+OPEN EmployeeCursor1;
+
+FETCH NEXT FROM EmployeeCursor1
+INTO @EmpName, @Salary;
+
+WHILE @@FETCH_STATUS = 0
+BEGIN
+    PRINT @EmpName + ' Salary = ' + CAST(@Salary AS VARCHAR(20));
+
+    FETCH NEXT FROM EmployeeCursor1
+    INTO @EmpName, @Salary;
+END;
+
+CLOSE EmployeeCursor1;
+DEALLOCATE EmployeeCursor1;

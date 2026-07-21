@@ -1,0 +1,9 @@
+USE OnlineRetailDB;
+GO
+
+CREATE PROCEDURE GetEmployees
+AS
+BEGIN
+    SELECT * FROM Employees;
+END;
+GO

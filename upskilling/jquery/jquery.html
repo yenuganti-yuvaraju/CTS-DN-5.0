@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Tutorial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 10px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .box {
+            width: 200px;
+            height: 100px;
+            background-color: white;
+            border: 2px solid #007bff;
+            padding: 10px;
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        input {
+            padding: 8px;
+            margin: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        #itemList {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #itemList li {
+            background-color: #e9ecef;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 4px;
+        }
+
+        .interactive-box {
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            border: 2px solid #28a745;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>jQuery Tutorial - Complete Examples</h1>
+
+    <!-- Section 1: jQuery Library Inclusion & Console Log -->
+    <div class="section">
+        <h2>1. jQuery Library Inclusion & Console Log</h2>
+        <p>Open DevTools (F12) → Console to see the "Hello World!" message logged by jQuery.</p>
+        <button id="checkConsoleBtn">Check Console (F12)</button>
+    </div>
+
+    <!-- Section 2: The $() Function & Document Ready -->
+    <div class="section">
+        <h2>2. The $() Function & $(document).ready()</h2>
+        <h3 id="dynamicHeading">This text will change when ready</h3>
+        <p id="hideParagraph">This paragraph will hide when you click the button below.</p>
+        <button id="hideParaBtn">Hide Paragraph</button>
+        <button id="showParaBtn">Show Paragraph</button>
+    </div>
+
+    <!-- Section 3: jQuery Methods - Hide, Show, Fade, Toggle -->
+    <div class="section">
+        <h2>3. jQuery Methods - Hide, Show, Fade & Toggle</h2>
+        <div class="box" id="effectBox">Effect Box</div>
+        <button id="hideBtn">Hide</button>
+        <button id="showBtn">Show</button>
+        <button id="toggleBtn">Toggle</button>
+        <button id="fadeOutBtn">Fade Out</button>
+        <button id="fadeInBtn">Fade In</button>
+        <button id="slideUpBtn">Slide Up</button>
+        <button id="slideDownBtn">Slide Down</button>
+        <button id="chainBtn">Chain: Slide Up → Delay → Slide Down</button>
+    </div>
+
+    <!-- Section 4: DOM Manipulation - Form & Dynamic List -->
+    <div class="section">
+        <h2>4. DOM Manipulation - Form & Dynamic List</h2>
+        <input type="text" id="itemInput" placeholder="Enter item name">
+        <button id="addItemBtn">Add Item</button>
+        <button id="removeAllBtn">Remove All Items</button>
+        <ul id="itemList"></ul>
+    </div>
+
+    <!-- Section 5: Working with Events - Color Change on Click/Double-Click -->
+    <div class="section">
+        <h2>5. Working with Events - Click & Double-Click</h2>
+        <p>Click the box below to change its color to red. Double-click to change it back to white.</p>
+        <div class="interactive-box" id="colorBox">Click Me</div>
+    </div>
+
+    <!-- Section 6: Event Helpers -->
+    <div class="section">
+        <h2>6. Event Helpers - Mouse & Keyboard Events</h2>
+        <p>Hover over the box, click it, or use keyboard input:</p>
+        <div class="interactive-box" id="eventBox">Hover / Click / Type</div>
+        <input type="text" id="keyInput" placeholder="Type here to see events">
+        <p id="eventLog">Events will be logged here...</p>
+    </div>
+
+    <!-- Include jQuery from CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Include local jQuery file -->
+    <script src="jquery.js"></script>
+
+</body>
+
+</html>
